@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Tea Shop - Product</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><img src="images/logo.png" alt="Ar-Tea Logo">Ar-Tea</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="about.html#about">About Us</a></li>
+                <li><a href="menu.html#menu">Menu</a></li>
+                <li><a href="contact.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#" class="search-icon">
+                <img src="images/magnifying-glass.png" alt="Search Icon">
+            </a>
+            <a href="#" class="cart-icon">
+                <img src="images/online-shopping.png" alt="Cart Icon">
+            </a>
+        </div>
+    </header>    
+
+    <div id="cart">
+        <h3>Your Cart</h3>
+        <ul id="cart-items">
+            <!-- Cart items will appear here -->
+        </ul>
+        <p id="cart-total">Total: ₱0.00</p>
+        <button id="clear-cart-btn" class="clear-cart-btn">Clear Cart</button>
+        <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+    </div>
+    
+    <!-- Modal Popup for Add to Cart Confirmation -->
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <h3>Item Added to Cart</h3>
+            <p id="popup-item-name"></p>
+            <p id="popup-item-price"></p>
+            <button id="close-popup-btn">Close</button>
+        </div>
+    </div>
+    
+    <section id="menu" class="menu-section">
+        <h3>Regular Milktea</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/bg.jpg" alt="Matcha Milk Tea">
+                <h3>Matcha Milk Tea</h3>
+                <button class="add-to-cart-btn" data-name="Matcha Milk Tea" data-price="59.00">Add to Cart</button>
+                <p>₱59.00</p>
+                            <!-- Rating Section -->
+                <div class="rating" data-product="Matcha Milk Tea">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/reg1.jpg" alt="Taro Milk Tea">
+                <h3>Taro Milk Tea</h3>
+                <button class="add-to-cart-btn" data-name="Taro Milk Tea" data-price="59.00">Add to Cart</button>
+                <p>₱59.00</p>
+                            <!-- Rating Section -->
+                <div class="rating" data-product="Matcha Milk Tea">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/reg2.jpg" alt="Blueberry Milk Tea">
+                <h3>Blueberry Milk Tea</h3>
+                <button class="add-to-cart-btn" data-name="Blueberry Milk Tea" data-price="59.00">Add to Cart</button>
+                            <p>₱59.00</p>
+                            <!-- Rating Section -->
+                <div class="rating" data-product="Matcha Milk Tea">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+            </div>
+        </div>
+
+        <h3>Yakult Series Milktea</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/ys.jpg" alt="Strawberry Yakult Milk Tea">
+                <h3>Strawberry Yakult Milk Tea</h3>
+                <button class="add-to-cart-btn" data-name="Strawberry Yakult Milk Tea" data-price="69.00">Add to Cart</button>
+                <p>₱69.00</p>
+                            <!-- Rating Section -->
+                <div class="rating" data-product="Matcha Milk Tea">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/ys2.jpg" alt="Yakulade Yakult Milk Tea">
+                <h3>Yakulade Yakult Milk Tea</h3>
+                <button class="add-to-cart-btn" data-name="Yakulade Yakult Milk Tea" data-price="69.00">Add to Cart</button>
+                <p>₱69.00</p>
+                            <!-- Rating Section -->
+                <div class="rating" data-product="Matcha Milk Tea">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/ys3.jpg" alt="Mango Yakult Milk Tea">
+                <h3>Mango Yakult Milk Tea</h3>
+                <button class="add-to-cart-btn" data-name="Mango Yakult Milk Tea" data-price="69.00">Add to Cart</button>
+                <p>₱69.00</p>
+                            <!-- Rating Section -->
+                <div class="rating" data-product="Matcha Milk Tea">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Popup for Add to Cart Confirmation -->
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <h3>Item Added to Cart</h3>
+            <p id="popup-item-name"></p>
+            <p id="popup-item-price"></p>
+            <button id="close-popup-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Ar-Tea Logo" />
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61558036748043"><img src="images/fb.png" alt="Facebook"></a>
+                        <a href="#"><img src="images/ig-removebg-preview.png" alt="Instagram"></a>
+                        <a href="#"><img src="images/twitter (2).png" alt="twitter"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>How To Order</h4>
+                    <a href="#">View Menu</a>
+                    <a href="#">Locations</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Promotions</h4>
+                    <a href="#">Promos</a>
+                    <a href="#">Gift Cards</a>
+                </div>
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <a href="#">About Ar-Tea</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Rate Our Store</a>
+                </div>
+                <div class="footer-section">
+                    <h4>About Our Website</h4>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+            <div class="footer-buttons">
+                <a href="menu.html#product" class="cta-button">Order Now</a>
+            </div>
+        </div>
+        <p class="footer-copyright">
+            © 2024 Ar-Tea Milk Tea House. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
